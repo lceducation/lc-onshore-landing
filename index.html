@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Já está na Austrália? A LC Intercâmbio matricula brasileiros na ALC — Australian Language Centre — com assessoria 100% em português, consultoria gratuita e renovação de visto descomplicada.">
+<meta name="keywords" content="estudar inglês Sydney, ALC Australian Language Centre, intercâmbio Austrália, renovação visto estudante, brasileiros Sydney, onshore visa">
+<meta property="og:title" content="Estude inglês em Sydney na ALC — LC Intercâmbio">
+<meta property="og:description" content="Para brasileiros onshore na Austrália. Consultoria gratuita, 100% em português. Agentes credenciados AEATC.">
+<meta property="og:type" content="website">
+<title>LC Intercâmbio × ALC — Estude inglês em Sydney</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy:       #1A1A2E;
+    --navy-2:     #252544;
+    --navy-3:     #0F0F22;
+    --orange:     #E94E1B;
+    --orange-2:   #F39C12;
+    --orange-soft:#FFB066;
+    --red-alc:    #C44536;
+    --red-deep:   #9F3429;
+    --beige:      #F1D6B8;
+    --white:      #FFFFFF;
+    --soft:       #F8F5EE;
+    --gray-50:    #F9FAFB;
+    --gray-100:   #F3F4F6;
+    --gray-200:   #E5E7EB;
+    --gray-300:   #D1D5DB;
+    --gray-500:   #6B7280;
+    --gray-700:   #374151;
+    --gray-900:   #111827;
+    --wa-green:   #25D366;
+    --wa-green-2: #1EBE5A;
+    --wa-dark:    #128C7E;
+    --shadow-sm:  0 2px 8px rgba(0,0,0,0.06);
+    --shadow:     0 8px 32px rgba(0,0,0,0.10);
+    --shadow-lg:  0 20px 50px rgba(0,0,0,0.18);
+    --max-w:      1200px;
+    --radius:     16px;
+    --radius-lg:  24px;
+    --radius-pill:9999px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--gray-900);
+    background: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* ============ HEADER ============ */
+  .header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: all 0.3s ease;
+  }
+  .header-inner {
+    max-width: var(--max-w); margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px;
+  }
+  .header-brand { display: flex; align-items: center; gap: 14px; }
+  .header-brand img { height: 44px; width: auto; }
+  .header-brand .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .header-brand .brand-name {
+    color: var(--white); font-weight: 900; font-size: 16px; letter-spacing: 0.5px;
+  }
+  .header-brand .brand-tag {
+    color: var(--orange-2); font-weight: 500; font-size: 11px; margin-top: 3px;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .header-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--wa-green); color: var(--white);
+    padding: 10px 18px; border-radius: var(--radius-pill);
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .header-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5); }
+  .header-cta svg { width: 18px; height: 18px; }
+
+  @media (max-width: 640px) {
+    .header-brand .brand-text { display: none; }
+    .header-cta span { display: none; }
+    .header-cta { padding: 10px 14px; }
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(circle at 90% 10%, rgba(243,156,18,0.20), transparent 50%),
+      radial-gradient(circle at 5% 90%, rgba(196,69,54,0.18), transparent 50%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-3) 100%);
+    color: var(--white);
+    padding: 130px 0 80px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url('https://www.alcc.edu.au/static/upload/image/20230919/1695095035703204.jpg');
+    background-size: cover; background-position: top center;
+    opacity: 0.18;
+    mix-blend-mode: luminosity;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 30%, var(--navy-3) 100%);
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(243,156,18,0.18); border: 1px solid rgba(243,156,18,0.45);
+    color: var(--orange-2); padding: 8px 16px; border-radius: var(--radius-pill);
+    font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .hero-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange-2); animation: pulse 2s infinite; }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 900; line-height: 1.05;
+    margin-bottom: 22px; letter-spacing: -0.5px;
+  }
+  .hero h1 .accent { color: var(--orange-2); }
+  .hero p.lead {
+    font-size: clamp(16px, 1.6vw, 19px);
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 32px; max-width: 580px;
+    font-weight: 400;
+  }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
+  .btn-wa {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--wa-green); color: var(--white);
+    padding: 18px 28px; border-radius: var(--radius-pill);
+    font-size: 17px; font-weight: 800;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    transition: all 0.2s;
+  }
+  .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(37, 211, 102, 0.55); background: var(--wa-green-2); }
+  .btn-wa svg { width: 22px; height: 22px; }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--white); padding: 18px 28px;
+    border: 2px solid rgba(255,255,255,0.25); border-radius: var(--radius-pill);
+    font-size: 16px; font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--orange-2); color: var(--orange-2); }
+
+  .hero-trust {
+    display: flex; flex-wrap: wrap; gap: 24px 36px; align-items: center;
+    padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.10);
+  }
+  .trust-item { display: flex; align-items: center; gap: 10px; }
+  .trust-num { font-size: 26px; font-weight: 900; color: var(--orange-2); line-height: 1; }
+  .trust-lbl { font-size: 12px; color: rgba(255,255,255,0.70); letter-spacing: 0.5px; line-height: 1.3; }
+
+  .hero-visual {
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+  }
+  .hero-photo-card {
+    position: relative;
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 14px; box-shadow: var(--shadow-lg);
+    transform: rotate(-2deg);
+    transition: transform 0.4s;
+  }
+  .hero-photo-card:hover { transform: rotate(0deg) scale(1.02); }
+  .hero-photo-card img {
+    width: 100%; max-width: 380px;
+    border-radius: 14px; object-fit: cover;
+    aspect-ratio: 3/4;
+  }
+  .hero-photo-card .label {
+    position: absolute; top: 28px; left: 28px;
+    background: var(--navy); color: var(--white);
+    padding: 6px 14px; border-radius: var(--radius-pill);
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  }
+  .hero-stamp {
+    position: absolute; bottom: -20px; right: -20px;
+    background: var(--orange); color: var(--white);
+    width: 130px; height: 130px; border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 16px;
+    box-shadow: 0 12px 30px rgba(233, 78, 27, 0.5);
+    transform: rotate(8deg);
+    border: 3px solid var(--white);
+  }
+  .hero-stamp .big { font-size: 22px; font-weight: 900; line-height: 1; }
+  .hero-stamp .small { font-size: 10px; font-weight: 600; letter-spacing: 0.6px; line-height: 1.2; margin-top: 4px; }
+
+  @media (max-width: 880px) {
+    .hero { padding: 100px 0 60px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { order: -1; }
+    .hero-photo-card img { max-width: 280px; }
+    .hero-trust { gap: 20px; }
+    .trust-item { flex: 1 1 calc(50% - 10px); min-width: 130px; }
+  }
+
+  /* ============ SECTION GENERICS ============ */
+  section { padding: 88px 0; }
+  .section-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(233, 78, 27, 0.10); color: var(--orange);
+    padding: 6px 14px; border-radius: var(--radius-pill);
+    font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: clamp(28px, 3.4vw, 44px); font-weight: 900;
+    line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 16px;
+    color: var(--navy);
+  }
+  .section-title .accent { color: var(--orange); }
+  .section-sub {
+    font-size: clamp(16px, 1.4vw, 18px); color: var(--gray-500);
+    max-width: 640px; line-height: 1.55;
+  }
+  .section-head { text-align: center; max-width: 800px; margin: 0 auto 56px; }
+  .section-head.left { text-align: left; margin-left: 0; }
+  .section-head .section-sub { margin-left: auto; margin-right: auto; }
+  .section-head.left .section-sub { margin-left: 0; }
+
+  /* ============ PAIN POINTS ============ */
+  .pain { background: var(--soft); }
+  .pain-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px;
+  }
+  .pain-card {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 28px 24px; box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--orange);
+    display: flex; flex-direction: column; gap: 14px;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .pain-icon {
+    width: 52px; height: 52px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-2) 100%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white); font-size: 24px; font-weight: 900;
+  }
+  .pain-card h3 { font-size: 18px; font-weight: 800; color: var(--navy); line-height: 1.25; }
+  .pain-card p { font-size: 14px; color: var(--gray-500); line-height: 1.5; }
+  @media (max-width: 980px) { .pain-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .pain-grid { grid-template-columns: 1fr; } }
+
+  /* ============ SOLUTION / ALC ============ */
+  .alc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    align-items: center;
+  }
+  .alc-photo {
+    border-radius: var(--radius-lg); overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+  .alc-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+  .alc-photo .alc-card-overlay {
+    position: absolute; bottom: 20px; left: 20px; right: 20px;
+    background: var(--white); border-radius: 14px;
+    padding: 18px 20px; box-shadow: var(--shadow);
+    display: flex; align-items: center; gap: 16px;
+  }
+  .alc-photo .alc-card-overlay img { width: 70px; aspect-ratio: auto; flex-shrink: 0; }
+  .alc-photo .alc-card-overlay .alc-meta { flex: 1; }
+  .alc-photo .alc-card-overlay .alc-meta strong {
+    display: block; font-size: 14px; font-weight: 800; color: var(--navy);
+  }
+  .alc-photo .alc-card-overlay .alc-meta span {
+    display: block; font-size: 11px; color: var(--gray-500); margin-top: 2px; letter-spacing: 0.4px;
+  }
+  .alc-content h2 .accent { color: var(--orange); }
+  .alc-content .section-sub { margin-bottom: 32px; }
+
+  .courses-list { display: grid; gap: 14px; margin-bottom: 32px; }
+  .course-item {
+    display: flex; align-items: center; gap: 18px;
+    background: var(--gray-50); border-radius: var(--radius);
+    padding: 18px 22px;
+    border-left: 4px solid var(--orange);
+    transition: transform 0.2s, background 0.2s;
+  }
+  .course-item:hover { transform: translateX(4px); background: var(--white); box-shadow: var(--shadow-sm); }
+  .course-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--navy); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 900; flex-shrink: 0;
+  }
+  .course-info strong { display: block; font-size: 17px; font-weight: 800; color: var(--navy); }
+  .course-info span { display: block; font-size: 13px; color: var(--gray-500); margin-top: 2px; }
+  .campuses {
+    display: flex; gap: 14px; flex-wrap: wrap;
+  }
+  .campus-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--navy); color: var(--white);
+    padding: 10px 18px; border-radius: var(--radius-pill);
+    font-size: 13px; font-weight: 600;
+  }
+  .campus-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange-2); }
+  @media (max-width: 880px) {
+    .alc-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ============ LC PILLARS ============ */
+  .pillars { background: var(--navy); color: var(--white); }
+  .pillars .section-title { color: var(--white); }
+  .pillars .section-sub { color: rgba(255,255,255,0.70); }
+  .pillars-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px;
+  }
+  .pillar-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    transition: all 0.25s;
+  }
+  .pillar-card:hover {
+    background: rgba(243,156,18,0.08); border-color: rgba(243,156,18,0.30);
+    transform: translateY(-4px);
+  }
+  .pillar-icon {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-2) 100%);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+    font-size: 26px;
+  }
+  .pillar-card h3 { font-size: 18px; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+  .pillar-card p { font-size: 14px; color: rgba(255,255,255,0.70); line-height: 1.55; }
+  @media (max-width: 980px) { .pillars-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .pillars-grid { grid-template-columns: 1fr; } }
+
+  /* ============ PROCESS ============ */
+  .process { background: var(--soft); }
+  .process-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+    position: relative;
+  }
+  .process-card {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 36px 28px; box-shadow: var(--shadow-sm);
+    position: relative;
+    text-align: left;
+  }
+  .process-num {
+    position: absolute; top: -22px; left: 28px;
+    background: var(--orange); color: var(--white);
+    width: 48px; height: 48px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 18px;
+    box-shadow: 0 6px 18px rgba(233, 78, 27, 0.4);
+  }
+  .process-card h3 { font-size: 22px; font-weight: 800; color: var(--navy); margin: 18px 0 12px; }
+  .process-card p { color: var(--gray-500); line-height: 1.55; font-size: 15px; }
+  @media (max-width: 880px) {
+    .process-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* ============ STATS + CREDENCIAMENTOS ============ */
+  .stats {
+    background:
+      radial-gradient(circle at 80% 20%, rgba(233,78,27,0.20), transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(243,156,18,0.16), transparent 50%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-3) 100%);
+    color: var(--white);
+  }
+  .stats .section-title { color: var(--white); }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+    margin-bottom: 60px;
+  }
+  .stat-card { text-align: center; padding: 20px; }
+  .stat-num {
+    font-size: clamp(40px, 5vw, 64px); font-weight: 900;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-2) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .stat-label {
+    margin-top: 12px; font-size: 14px; font-weight: 600;
+    color: rgba(255,255,255,0.80); letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .credenciamentos {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg);
+    padding: 36px 30px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    align-items: center; text-align: center;
+  }
+  .cred-item { padding: 8px; }
+  .cred-item .cred-code {
+    font-size: 22px; font-weight: 900; color: var(--orange-2); letter-spacing: 1px;
+  }
+  .cred-item .cred-name {
+    margin-top: 8px; font-size: 12px; color: rgba(255,255,255,0.70); line-height: 1.4;
+  }
+  @media (max-width: 880px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .credenciamentos { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 14px; }
+  .faq-item {
+    background: var(--white); border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .faq-item.open { box-shadow: var(--shadow); border-color: var(--orange); }
+  .faq-q {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 26px;
+    font-size: 17px; font-weight: 700; color: var(--navy); text-align: left;
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--orange); }
+  .faq-q .chev {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--gray-100); color: var(--orange);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.3s, background 0.2s;
+    font-size: 14px; font-weight: 900; flex-shrink: 0;
+  }
+  .faq-item.open .chev { background: var(--orange); color: var(--white); transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    padding: 0 26px;
+    color: var(--gray-700); font-size: 15px; line-height: 1.65;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+  .faq-item.open .faq-a { max-height: 400px; padding: 0 26px 24px; }
+
+  /* ============ FINAL CTA ============ */
+  .final-cta {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(233,78,27,0.40), transparent 50%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-3) 100%);
+    color: var(--white); text-align: center;
+    padding: 100px 0 90px;
+  }
+  .final-cta h2 {
+    font-size: clamp(32px, 4vw, 52px); font-weight: 900;
+    line-height: 1.1; margin-bottom: 22px;
+  }
+  .final-cta h2 .accent { color: var(--orange-2); }
+  .final-cta p {
+    font-size: clamp(16px, 1.4vw, 19px); color: rgba(255,255,255,0.80);
+    max-width: 640px; margin: 0 auto 36px;
+  }
+  .final-cta .btn-wa {
+    font-size: 19px; padding: 22px 36px;
+  }
+  .final-cta .ssl {
+    margin-top: 26px; font-size: 13px; color: rgba(255,255,255,0.55);
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--navy-3); color: rgba(255,255,255,0.70);
+    padding: 60px 0 28px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-brand img { height: 52px; margin-bottom: 16px; }
+  .footer-brand h4 {
+    color: var(--white); font-size: 18px; font-weight: 800; margin-bottom: 8px;
+  }
+  .footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+  .footer-col h5 {
+    color: var(--white); font-size: 13px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .footer-col a, .footer-col li {
+    display: block; font-size: 14px; color: rgba(255,255,255,0.65);
+    margin-bottom: 10px; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--orange-2); }
+  .socials { display: flex; gap: 10px; margin-top: 8px; }
+  .socials a {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 0;
+  }
+  .socials a:hover { background: var(--orange); color: var(--white); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding-top: 24px;
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
+    font-size: 12px;
+  }
+  @media (max-width: 880px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ============ FLOATING WHATSAPP ============ */
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 200;
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--wa-green);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+    transition: transform 0.25s;
+  }
+  .wa-float:hover { transform: scale(1.08); }
+  .wa-float::before {
+    content: ""; position: absolute; inset: -8px;
+    border-radius: 50%; background: var(--wa-green);
+    opacity: 0.4; z-index: -1;
+    animation: ring 2.2s infinite;
+  }
+  @keyframes ring {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  .wa-float svg { width: 32px; height: 32px; color: var(--white); }
+  .wa-tooltip {
+    position: absolute; right: 80px; top: 50%; transform: translateY(-50%);
+    background: var(--navy); color: var(--white);
+    padding: 10px 16px; border-radius: var(--radius);
+    font-size: 13px; font-weight: 600; white-space: nowrap;
+    box-shadow: var(--shadow);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .wa-tooltip::after {
+    content: ""; position: absolute; right: -6px; top: 50%; transform: translateY(-50%);
+    border: 6px solid transparent; border-left-color: var(--navy);
+  }
+  .wa-float:hover .wa-tooltip { opacity: 1; transform: translateY(-50%) translateX(-4px); }
+
+  /* ============ UTILITY ============ */
+  .text-center { text-align: center; }
+  .mt-0 { margin-top: 0 !important; }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+
+<body>
+
+<!-- =============== HEADER =============== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="header-brand" aria-label="LC Intercâmbio">
+      <img src="https://lceducationandmigration.com/logo-transparent.png" alt="LC Intercâmbio">
+      <div class="brand-text">
+        <span class="brand-name">LC INTERCÂMBIO</span>
+        <span class="brand-tag">Austrália · Intercâmbio</span>
+      </div>
+    </a>
+    <a href="https://wa.me/16479161335?text=Ol%C3%A1!%20Estou%20na%20Austr%C3%A1lia%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20de%20ingl%C3%AAs%20da%20ALC."
+       class="header-cta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1.1 2.6c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M20.5 3.5C18.3 1.2 15.3 0 12 0S5.7 1.2 3.5 3.5C1.2 5.7 0 8.7 0 12s1.2 6.3 3.5 8.5L0 24l3.5-3.5C5.7 22.8 8.7 24 12 24s6.3-1.2 8.5-3.5c2.2-2.2 3.5-5.2 3.5-8.5s-1.3-6.3-3.5-8.5zM12 22c-2.7 0-5.2-1.1-7.1-3l-.4-.4-2.1 2.1L4.5 18.6 4.1 18.2C2.2 16.3 1.1 13.8 1.1 11s1.1-5.3 3-7.1C5.9 2 8.4.9 11.1.9c2.7 0 5.3 1.1 7.1 3 1.9 1.9 3 4.4 3 7.1 0 2.8-1.1 5.3-3 7.1C16.3 21.9 13.8 22 12 22z"/></svg>
+      <span>Falar no WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<!-- =============== HERO =============== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Para brasileiros ONSHORE · já na Austrália</span>
+      </div>
+      <h1>Renove seu visto estudando inglês na <span class="accent">ALC</span> — sem dor de cabeça.</h1>
+      <p class="lead">Assessoria 100% em português, gratuita, com agentes credenciados <strong>AEATC</strong>. A LC Intercâmbio matricula você na <strong>Australian Language Centre</strong> (Parramatta + City) com o curso certo pro seu visto.</p>
+      <div class="hero-ctas">
+        <a class="btn-wa"
+           href="https://wa.me/16479161335?text=Ol%C3%A1!%20Estou%20na%20Austr%C3%A1lia%20e%20preciso%20renovar%20meu%20visto%20com%20um%20curso%20de%20ingl%C3%AAs%20na%20ALC."
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1.1 2.6c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M20.5 3.5C18.3 1.2 15.3 0 12 0S5.7 1.2 3.5 3.5C1.2 5.7 0 8.7 0 12s1.2 6.3 3.5 8.5L0 24l3.5-3.5C5.7 22.8 8.7 24 12 24s6.3-1.2 8.5-3.5c2.2-2.2 3.5-5.2 3.5-8.5s-1.3-6.3-3.5-8.5zM12 22c-2.7 0-5.2-1.1-7.1-3l-.4-.4-2.1 2.1L4.5 18.6 4.1 18.2C2.2 16.3 1.1 13.8 1.1 11s1.1-5.3 3-7.1C5.9 2 8.4.9 11.1.9c2.7 0 5.3 1.1 7.1 3 1.9 1.9 3 4.4 3 7.1 0 2.8-1.1 5.3-3 7.1C16.3 21.9 13.8 22 12 22z"/></svg>
+          Falar agora no WhatsApp
+        </a>
+        <a class="btn-secondary" href="#alc">Conhecer a escola →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <div class="trust-num">1.200+</div>
+          <div class="trust-lbl">Brasileiros<br>matriculados</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">94%</div>
+          <div class="trust-lbl">Taxa de<br>aprovação de visto</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">8</div>
+          <div class="trust-lbl">Anos no<br>mercado australiano</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-card">
+        <span class="label">SYDNEY · ALC</span>
+        <img src="https://www.alcc.edu.au/static/upload/image/20230919/1695095035703204.jpg" alt="Estudantes ALC em Sydney">
+      </div>
+      <div class="hero-stamp">
+        <span class="big">Consultoria</span>
+        <span class="small">100% GRATUITA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PAIN POINTS =============== -->
+<section class="pain reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Sua situação agora</div>
+      <h2 class="section-title">Você está em <span class="accent">qual situação</span> na Austrália?</h2>
+      <p class="section-sub">A gente resolve. Em português, com transparência, sem letra miúda.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">⏰</div>
+        <h3>Visto vencendo em breve?</h3>
+        <p>Te ajudamos a aplicar o Student Visa 500 no tempo certo, com curso e escola que o Department of Home Affairs reconhece.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">↔</div>
+        <h3>Quer trocar de escola?</h3>
+        <p>Saindo de uma escola ruim ou cara? Te transferimos pra ALC sem traumas, com transferência de COE e tudo certo no PRISMS.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">💼</div>
+        <h3>Quer estudar e trabalhar?</h3>
+        <p>Student Visa permite 48h quinzenais. Te indicamos curso e horário compatíveis com sua jornada de trabalho.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🇧🇷</div>
+        <h3>Cansado de não entender nada?</h3>
+        <p>Toda comunicação em português. Cada email da imigração, cada documento da escola — explicado com clareza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== ABOUT ALC =============== -->
+<section id="alc" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Escola Parceira Oficial</div>
+      <h2 class="section-title">Conheça a <span class="accent">Australian Language Centre</span></h2>
+      <p class="section-sub">Escola de inglês reconhecida pelo governo australiano, com mais de 30 anos de história em Sydney e duas localizações estratégicas.</p>
+    </div>
+    <div class="alc-grid">
+      <div class="alc-photo">
+        <img src="https://www.alcc.edu.au/static/upload/image/20230919/1695095024255982.jpg" alt="Estudantes na ALC Sydney">
+        <div class="alc-card-overlay">
+          <img src="https://www.alcc.edu.au/assets/images/logo/logo.png" alt="ALC">
+          <div class="alc-meta">
+            <strong>Australian Language Centre</strong>
+            <span>Parramatta · City · CRICOS 03965M</span>
+          </div>
+        </div>
+      </div>
+      <div class="alc-content">
+        <h3 class="section-title" style="font-size: clamp(24px, 2.8vw, 34px);">Cursos de inglês <span class="accent">pra cada objetivo</span></h3>
+        <p class="section-sub">Da base ao preparatório, com COE compatível para Student Visa.</p>
+        <div class="courses-list">
+          <div class="course-item">
+            <div class="course-num">01</div>
+            <div class="course-info">
+              <strong>Inglês Geral (General English)</strong>
+              <span>Do iniciante ao avançado · matrículas semanais</span>
+            </div>
+          </div>
+          <div class="course-item">
+            <div class="course-num">02</div>
+            <div class="course-info">
+              <strong>Inglês Acadêmico (EAP)</strong>
+              <span>English for Academic Purposes — porta de entrada pra VET e Uni</span>
+            </div>
+          </div>
+          <div class="course-item">
+            <div class="course-num">03</div>
+            <div class="course-info">
+              <strong>IELTS &amp; PTE Preparation</strong>
+              <span>Preparatório oficial para certificações internacionais</span>
+            </div>
+          </div>
+        </div>
+        <div class="campuses">
+          <span class="campus-pill"><span class="dot"></span> Parramatta Campus</span>
+          <span class="campus-pill"><span class="dot"></span> Sydney City Campus</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== LC PILLARS =============== -->
+<section class="pillars reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow" style="background: rgba(243,156,18,0.15); color: var(--orange-2);">Por que a LC</div>
+      <h2 class="section-title">Mais que matrícula — <span class="accent">acompanhamento real</span>.</h2>
+      <p class="section-sub">A LC Intercâmbio é uma agência com credenciamento oficial e atendimento 100% em português, focada em quem já vive a Austrália.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🎓</div>
+        <h3>AEATC certified</h3>
+        <p>Agentes credenciados pelo Australia Education Agent Training Course — o curso oficial do governo australiano.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🇧🇷</div>
+        <h3>100% em português</h3>
+        <p>Toda a comunicação, documentação, suporte e explicação de visto na sua língua. Sem ruído, sem mal-entendido.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">💰</div>
+        <h3>Consultoria gratuita</h3>
+        <p>Sem custo, sem compromisso. A LC ganha pela matrícula na escola — pra você é tudo gratuito.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📍</div>
+        <h3>Suporte local</h3>
+        <p>Da renovação de visto à orientação de moradia e trabalho, a LC acompanha cada etapa enquanto você vive a Austrália.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PROCESS =============== -->
+<section class="process reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Como funciona</div>
+      <h2 class="section-title">3 passos. <span class="accent">15 minutos</span>. Sem compromisso.</h2>
+      <p class="section-sub">Do primeiro WhatsApp à matrícula confirmada — você sabe exatamente onde está.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-num">01</div>
+        <h3>Conversa no WhatsApp</h3>
+        <p>15 minutos pra entender seu visto, sua situação na Austrália e seu objetivo. Sem promessas vazias, só o caminho real.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">02</div>
+        <h3>Plano sob medida</h3>
+        <p>A gente envia o plano: qual curso, qual campus, quanto custa, qual visto aplicar e o cronograma de documentos.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">03</div>
+        <h3>Matrícula + renovação</h3>
+        <p>Cuidamos da inscrição na ALC, emissão do COE e do passo a passo da renovação do visto estudante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== STATS + CREDENCIAMENTOS =============== -->
+<section class="stats reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow" style="background: rgba(243,156,18,0.15); color: var(--orange-2);">Números &amp; Credenciamentos</div>
+      <h2 class="section-title" style="color: var(--white);">Por que <span class="accent" style="color: var(--orange-2);">confiar</span> na LC.</h2>
+      <p class="section-sub" style="color: rgba(255,255,255,0.70);">Não é discurso — são dados, certificações e mais de uma década enviando brasileiros para os destinos certos.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">1.200+</div>
+        <div class="stat-label">Alunos matriculados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">94%</div>
+        <div class="stat-label">Aprovação de visto</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Anos no mercado</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Países (AU + CA)</div>
+      </div>
+    </div>
+    <div class="credenciamentos">
+      <div class="cred-item">
+        <div class="cred-code">AEATC</div>
+        <div class="cred-name">Australia Education Agent Training Course</div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-code">CRICOS 03965M</div>
+        <div class="cred-name">Registro oficial da ALC no governo australiano</div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-code">PRISMS</div>
+        <div class="cred-name">Sistema oficial de matrícula internacional</div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-code">CCEA</div>
+        <div class="cred-name">Canada Course for Education Agents</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FAQ =============== -->
+<section class="faq reveal">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Perguntas frequentes</div>
+      <h2 class="section-title">Dúvidas? <span class="accent">A gente responde.</span></h2>
+      <p class="section-sub">As perguntas mais comuns de quem está na Austrália e quer renovar o visto com curso de inglês.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Quanto custa a consultoria da LC Intercâmbio?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          A consultoria é <strong>100% gratuita</strong>. Não cobramos taxa de orientação, análise de perfil, montagem de plano ou submissão da matrícula. A LC é remunerada pela escola quando você se matricula — você só paga o curso e os custos oficiais de visto.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Como funciona a renovação do meu visto estudante?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          A renovação envolve: (1) escolher um novo curso compatível com o Student Visa 500, (2) ter OSHC válido durante todo o período, (3) demonstrar Genuine Student e suficiência financeira, (4) protocolar o pedido <strong>antes</strong> do visto atual expirar. A LC monta toda a documentação com você.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Posso trabalhar enquanto estudo na ALC?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          Sim. O Student Visa 500 permite <strong>48 horas quinzenais</strong> durante o período de aulas e tempo ilimitado nas férias oficiais. A ALC tem horários de aula em turnos manhã, tarde e noite que combinam com diferentes jornadas.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Estou em outra escola — posso transferir pra ALC?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          Sim. Se você está há mais de 6 meses no curso principal, a transferência é direta. Se está com menos tempo, precisa da carta de release da escola atual. A LC cuida de toda a comunicação e do release letter pra você.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Preciso ir até o escritório da LC?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          Não. Todo o processo é remoto: WhatsApp, email e videochamada. Você assina os documentos digitalmente. Funciona em qualquer cidade da Austrália — Sydney, Melbourne, Brisbane, Gold Coast, Perth.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Quanto tempo leva pra confirmar a matrícula?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          Depois do plano aprovado e documentação enviada, a matrícula sai em <strong>3 a 7 dias úteis</strong>. O COE (Confirmation of Enrolment) sai junto e já serve pra aplicar/renovar o visto.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>E se eu não souber qual curso escolher?</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">
+          Não tem problema. Na conversa inicial entendemos seu objetivo (visto, fluência, universidade, certificação) e <strong>nós recomendamos</strong> a combinação ideal entre General English, EAP e prep IELTS/PTE.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FINAL CTA =============== -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Pronto pra dar o <span class="accent">próximo passo</span> aí na Austrália?</h2>
+    <p>15 minutos no WhatsApp podem mudar seu próximo ano. Sem custo, sem compromisso, em português.</p>
+    <a class="btn-wa"
+       href="https://wa.me/16479161335?text=Ol%C3%A1!%20Estou%20na%20Austr%C3%A1lia%20e%20quero%20saber%20como%20renovar%20meu%20visto%20com%20um%20curso%20da%20ALC."
+       target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1.1 2.6c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M20.5 3.5C18.3 1.2 15.3 0 12 0S5.7 1.2 3.5 3.5C1.2 5.7 0 8.7 0 12s1.2 6.3 3.5 8.5L0 24l3.5-3.5C5.7 22.8 8.7 24 12 24s6.3-1.2 8.5-3.5c2.2-2.2 3.5-5.2 3.5-8.5s-1.3-6.3-3.5-8.5zM12 22c-2.7 0-5.2-1.1-7.1-3l-.4-.4-2.1 2.1L4.5 18.6 4.1 18.2C2.2 16.3 1.1 13.8 1.1 11s1.1-5.3 3-7.1C5.9 2 8.4.9 11.1.9c2.7 0 5.3 1.1 7.1 3 1.9 1.9 3 4.4 3 7.1 0 2.8-1.1 5.3-3 7.1C16.3 21.9 13.8 22 12 22z"/></svg>
+      Falar agora no WhatsApp
+    </a>
+    <div class="ssl">
+      <span>🔒</span> Conversa direta com a equipe LC · resposta em até 1 hora útil
+    </div>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://lceducationandmigration.com/logo-transparent.png" alt="LC Intercâmbio">
+        <h4>LC Education &amp; Migration</h4>
+        <p>Assessoria especializada em intercâmbio educacional para Austrália. Agentes credenciados AEATC.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <a href="mailto:info@lceducationandmigration.com">info@lceducationandmigration.com</a>
+        <a href="https://wa.me/16479161335" target="_blank" rel="noopener">WhatsApp: +1 (647) 916-1335</a>
+        <a href="https://www.lceducationandmigration.com" target="_blank" rel="noopener">lceducationandmigration.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Cursos</h5>
+        <a href="#alc">Inglês Geral</a>
+        <a href="#alc">Inglês Acadêmico (EAP)</a>
+        <a href="#alc">IELTS &amp; PTE</a>
+      </div>
+      <div class="footer-col">
+        <h5>Acompanhe</h5>
+        <div class="socials">
+          <a href="https://instagram.com/lc.intercambio" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/people/LC-Education-Migration/61586123204933/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://www.tiktok.com/@lc.intercambio" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LC Education and Migration · Toronto · Sydney</span>
+      <span>Agentes AEATC &amp; CCEA · Escola parceira: ALC (CRICOS 03965M)</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =============== FLOATING WHATSAPP =============== -->
+<a class="wa-float"
+   href="https://wa.me/16479161335?text=Ol%C3%A1!%20Estou%20na%20Austr%C3%A1lia%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20da%20ALC."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1.1 2.6c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M20.5 3.5C18.3 1.2 15.3 0 12 0S5.7 1.2 3.5 3.5C1.2 5.7 0 8.7 0 12s1.2 6.3 3.5 8.5L0 24l3.5-3.5C5.7 22.8 8.7 24 12 24s6.3-1.2 8.5-3.5c2.2-2.2 3.5-5.2 3.5-8.5s-1.3-6.3-3.5-8.5zM12 22c-2.7 0-5.2-1.1-7.1-3l-.4-.4-2.1 2.1L4.5 18.6 4.1 18.2C2.2 16.3 1.1 13.8 1.1 11s1.1-5.3 3-7.1C5.9 2 8.4.9 11.1.9c2.7 0 5.3 1.1 7.1 3 1.9 1.9 3 4.4 3 7.1 0 2.8-1.1 5.3-3 7.1C16.3 21.9 13.8 22 12 22z"/></svg>
+  <span class="wa-tooltip">Fale conosco!</span>
+</a>
+
+<script>
+  // ===== FAQ accordion =====
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const open = item.classList.contains('open');
+      // Close all others (single-open behavior)
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  // ===== Reveal on scroll =====
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ===== Header shadow on scroll =====
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) header.style.boxShadow = '0 8px 24px rgba(0,0,0,0.25)';
+    else header.style.boxShadow = 'none';
+  });
+</script>
+
+</body>
+</html>
