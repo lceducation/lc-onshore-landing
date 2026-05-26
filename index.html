@@ -10,6 +10,24 @@
 <meta property="og:type" content="website">
 <title>LC Intercâmbio × ALC — Estude inglês em Sydney</title>
 
+<!-- Meta Pixel — LC's Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2420981381702349');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2420981381702349&ev=PageView&noscript=1"
+  alt=""/></noscript>
+<!-- End Meta Pixel -->
+
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -611,7 +629,7 @@
         <span>Para brasileiros ONSHORE · já na Austrália</span>
       </div>
       <h1>Renove seu visto estudando inglês na <span class="accent">ALC</span> — sem dor de cabeça.</h1>
-      <p class="lead">Assessoria 100% em português, gratuita, com agentes credenciados <strong>AEATC</strong>. A LC Intercâmbio matricula você na <strong>Australian Language Centre</strong> (Parramatta + City) com o curso certo pro seu visto.</p>
+      <p class="lead">Assessoria 100% em português, gratuita, com agentes credenciados <strong>AEATC</strong>. A LC Intercâmbio matricula você na <strong>Australian Language Centre</strong>, no coração de Sydney, com o curso certo pro seu visto.</p>
       <div class="hero-ctas">
         <a class="btn-wa"
            href="https://wa.me/16479161335?text=Ol%C3%A1!%20Estou%20na%20Austr%C3%A1lia%20e%20preciso%20renovar%20meu%20visto%20com%20um%20curso%20de%20ingl%C3%AAs%20na%20ALC."
@@ -697,7 +715,7 @@
           <img src="https://www.alcc.edu.au/assets/images/logo/logo.png" alt="ALC">
           <div class="alc-meta">
             <strong>Australian Language Centre</strong>
-            <span>Parramatta · City · CRICOS 03965M</span>
+            <span>Sydney City Campus · CRICOS 03965M</span>
           </div>
         </div>
       </div>
@@ -728,8 +746,8 @@
           </div>
         </div>
         <div class="campuses">
-          <span class="campus-pill"><span class="dot"></span> Parramatta Campus</span>
           <span class="campus-pill"><span class="dot"></span> Sydney City Campus</span>
+          <span class="campus-pill"><span class="dot"></span> CRICOS 03965M</span>
         </div>
       </div>
     </div>
@@ -999,6 +1017,19 @@
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ===== Meta Pixel — track Lead on any WhatsApp click =====
+  document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.fbq) {
+        fbq('track', 'Lead', {
+          content_name: 'WhatsApp Click',
+          content_category: 'Onshore Landing',
+          source: link.closest('section, header, footer')?.className || 'page'
+        });
+      }
+    });
+  });
 
   // ===== Header shadow on scroll =====
   const header = document.querySelector('.header');
